@@ -1,0 +1,35 @@
+<div class="col-xs-12 ">
+  <%= link_to 'Back', links_path, class: 'btn btn-default pull-right' %>
+</div>
+
+<div class="col-xs-12 ">
+  <h1>New Link</h1>
+  <%= form_for @link do |f| %>
+
+    <div class="margin-half">
+      <%= f.label :title %>
+      <%= f.text_field :title, :required => 'required', class: 'form-control' %>
+    </div>
+
+    <div class="margin-half">
+      <%= f.label :description %>
+      <%= f.text_field :description, :required => 'required', class: 'form-control' %>
+    </div>
+
+    <div class="margin-half">
+      <%= f.label :url %>
+      <%= f.text_field :url, :required => 'required', class: 'form-control', rows: 10  %>
+    </div>
+
+      <div class="margin-half">
+          <%= f.label :category %>
+          <%= f.text_field :category, :required => 'required', class: 'form-control', rows: 10  %>
+        </div>
+
+
+    <div class="margin-half">
+      <%= f.submit "#{action} LINK ", class: 'btn btn-default'  %>
+    </div>
+
+  <% end %>
+</div>

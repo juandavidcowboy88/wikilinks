@@ -37,7 +37,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # this is to be able to use bootstrap-sass
+gem 'annotate'
+gem 'hirb'
 
+gem "font-awesome-rails"
 
 
 
