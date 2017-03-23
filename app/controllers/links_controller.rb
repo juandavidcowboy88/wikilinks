@@ -46,20 +46,14 @@ class LinksController < ApplicationController
 
   def show
      @link = Link.find(params[:id])
-     @comments = @link.comments
-     @comment = Comment.new
-
+    
   end
 
   def index
     @links = Link.all
   end
 
-
-
 private
-
-
 #-------------------------------------------------------------------------
 #method that ask for the admin user_signed_in.
   def is_admin?

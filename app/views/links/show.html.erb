@@ -1,2 +1,20 @@
-<h1>Links#show</h1>
-<p>Find me in app/views/links/show.html.erb</p>
+
+
+<div class="container">
+  <div class="panel panel-default">
+  <div class="panel-heading">titel: <%= @link.title%></div>
+    <div class="panel-body">
+      <p>  Beschreibung:<%=@link.description%> </p>
+      <p class="">Url: <%= @link.url %> </p>
+      <p>Kategorie:  <%= @link.category %></>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-right">
+    <%= link_to 'zuruckommen index', links_path, class: 'btn btn-danger' %>
+    </div>
+</div>

@@ -41,9 +41,8 @@ gem 'annotate'
 gem 'hirb'
 
 gem "font-awesome-rails"
-
-
-
+  
+gem 'omniauth-facebook'
 
 
 group :development, :test do
